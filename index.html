@@ -15,8 +15,12 @@
     the `--base-href` argument provided to `flutter build`.
   -->
   <base href="/">
-
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cay96.github.io/;">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self';
+  script-src 'self' 'wasm-unsafe-eval' 'unsafe-inline' https://www.gstatic.com/flutter-canvaskit/;
+  style-src 'self' 'unsafe-inline' https://fonts.gstatic.com;
+  font-src 'self' https://fonts.gstatic.com;
+  connect-src 'self' https://dev.bchat.ailike.me https://bchat.ailike.me wss://dev.bchat.ailike.me wss://bchat.ailike.me https://fonts.gstatic.com https://www.gstatic.com;
+  object-src 'none';">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
